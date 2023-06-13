@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(236, 52);
             this.ExitBtn.TabIndex = 77;
-            this.ExitBtn.Text = "Выйти";
+            this.ExitBtn.Text = "Отмена";
             this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1
             this.ContentTextBox.Location = new System.Drawing.Point(328, 262);
             this.ContentTextBox.Multiline = true;
             this.ContentTextBox.Name = "ContentTextBox";
-            this.ContentTextBox.Size = new System.Drawing.Size(477, 41);
+            this.ContentTextBox.Size = new System.Drawing.Size(477, 138);
             this.ContentTextBox.TabIndex = 83;
             // 
             // label2

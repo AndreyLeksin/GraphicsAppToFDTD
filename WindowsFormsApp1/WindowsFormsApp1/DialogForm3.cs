@@ -26,7 +26,8 @@ namespace WindowsFormsApp1
 
         private void SaveObjectBtn_Click(object sender, EventArgs e)
         {
-            if (WidthObjectTextBox.Text == "" || HeightObjectTextBox.Text == "" || CoordinateXtextBox.Text == "" || CoordinateYtextBox.Text == "")
+            if (WidthObjectTextBox.Text == "" || HeightObjectTextBox.Text == "" || CoordinateXtextBox.Text == "" || CoordinateYtextBox.Text == "" 
+                || EpsilonTextBox.Text == "" || SigmaTextBox.Text == "")
             {
                 MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -39,11 +40,13 @@ namespace WindowsFormsApp1
             double HeightObject = double.Parse(HeightObjectTextBox.Text);
             double CoordinateX = double.Parse(CoordinateXtextBox.Text);
             double CoordinateY = double.Parse(CoordinateYtextBox.Text);
+            double Epsilon = double.Parse(EpsilonTextBox.Text);
+            double Sigma = double.Parse(SigmaTextBox.Text);
 
             if (CoordinateX >= 0 && CoordinateX <= width && CoordinateY >= 0 && CoordinateY <= height) //проверка, не выходит ли точка привязки за границы расчетной области
             {
                 //передаем данные в класс
-                Rectanglee rectanglee = new Rectanglee(CoordinateX, CoordinateY, WidthObject, HeightObject);
+                Rectanglee rectanglee = new Rectanglee(CoordinateX, CoordinateY, WidthObject, HeightObject, Epsilon, Sigma);
                 Figures.Add(rectanglee);
             }
             else

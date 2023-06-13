@@ -29,6 +29,7 @@ namespace WindowsFormsApp1
         private void OpenForm3Btn_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1(_user);
+            form1.Owner = this;
             form1.ShowDialog();
         }
 
@@ -202,7 +203,7 @@ namespace WindowsFormsApp1
                 int height = int.Parse(HeightTextBox.Text);
                 // Создание объекта Bitmap для рисования графика
                 Bitmap bitmap = new Bitmap(width, height);
-
+                
                 if (BoxForObjectListBox.Items.Count != 0 && BoxForSourceListBox.Items.Count != 0)
                 {
                     foreach (Figure figure in Figures)
@@ -295,7 +296,7 @@ namespace WindowsFormsApp1
                     using (Graphics graphics = Graphics.FromImage(bitmap2))
                     {
                         // Отображение символа '*' на графике
-                        float starSize = 30; // Размер символа
+                        float starSize = 50; // Размер символа
                         float starX = (float)xCoordinate - starSize / 2; // Координата x символа
                         float starY = (float)yCoordinate - starSize / 2; // Координата y символа
 

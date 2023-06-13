@@ -12,17 +12,21 @@ namespace WindowsFormsApp1
         public double r1 { get; set; }
         public double r2 { get; set; }
         public double f { get; set; }
+        public double EpsilonEllips { get; set; }
+        public double SigmaEllips { get; set; }
 
-        public Ellipse(double x, double y, double r1, double r2, double f) : base(x, y)
+        public Ellipse(double x, double y, double r1, double r2, double f, double epsilon, double sigma) : base(x, y, epsilon, sigma)
         {
             this.x = x;
             this.y = y;
             this.r1 = r1;
             this.r2 = r2;
             this.f = f;
+            this.EpsilonEllips = epsilon;
+            this.SigmaEllips = sigma;
         }
 
-        public override bool IsPointFigure(Point point)
+        public override bool IsPointInFigure(Point point)
         {
             //расчет попадания координаты внутрь или на границу эллипса
             // Нормализуем координаты точки

@@ -22,12 +22,6 @@ namespace WindowsFormsApp1
 
         public static double XCoordinate { get; private set; }
         public static double YCoordinate { get; private set; }
-        
-
-        private void CharacteristicForSourceForm_Load(object sender, EventArgs e)
-        {
-            label1.Text = "Характеристика для " + _selectValue;
-        }
 
         private void SaveSourceBtn_Click(object sender, EventArgs e)
         {

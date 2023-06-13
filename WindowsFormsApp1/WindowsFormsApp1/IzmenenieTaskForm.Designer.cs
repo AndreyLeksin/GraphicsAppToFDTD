@@ -79,7 +79,7 @@ namespace WindowsFormsApp1
             this.ContentTextBox.Location = new System.Drawing.Point(300, 231);
             this.ContentTextBox.Multiline = true;
             this.ContentTextBox.Name = "ContentTextBox";
-            this.ContentTextBox.Size = new System.Drawing.Size(461, 39);
+            this.ContentTextBox.Size = new System.Drawing.Size(461, 100);
             this.ContentTextBox.TabIndex = 104;
             // 
             // label1

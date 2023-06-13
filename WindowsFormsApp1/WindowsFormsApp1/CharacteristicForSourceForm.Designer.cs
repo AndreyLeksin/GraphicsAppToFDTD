@@ -210,7 +210,6 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.SaveSourceBtn);
             this.Name = "CharacteristicForSourceForm";
             this.Text = "Характеристика для источника";
-            this.Load += new System.EventHandler(this.CharacteristicForSourceForm_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
